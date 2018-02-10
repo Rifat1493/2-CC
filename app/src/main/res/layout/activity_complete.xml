@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_complete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abdullahal_munzir.a2_cc.completeActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/inp_radio_group">
+
+        <RadioButton
+            android:text="Decimal"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/decimal_r"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio1"
+            android:soundEffectsEnabled="true" />
+
+        <RadioButton
+            android:text="Binary"
+            android:layout_height="wrap_content"
+            android:id="@+id/binary_r"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio1"
+            android:soundEffectsEnabled="true" />
+
+        <RadioButton
+            android:text="Octal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/octal_r"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio1"
+            android:soundEffectsEnabled="true" />
+
+        <RadioButton
+            android:text="Hex-decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hex_r"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio1"
+            android:soundEffectsEnabled="true" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:id="@+id/input"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Input"
+        android:theme="@android:style/Theme.Holo.Light"
+        android:layout_height="45dp"
+        android:background="#a5ffd8"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="19sp"
+        android:layout_below="@+id/inp_radio_group"
+        android:layout_alignParentStart="true"
+        android:inputType="textNoSuggestions" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/out_radio_group"
+        android:layout_below="@+id/output"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="Decimal"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/out_decimal_r"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio2"
+            android:soundEffectsEnabled="true" />
+
+        <RadioButton
+            android:text="Binary"
+            android:layout_height="wrap_content"
+            android:id="@+id/out_binary_r"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio2"
+            android:soundEffectsEnabled="true" />
+
+        <RadioButton
+            android:text="Octal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/out_octal_r"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio2"
+            android:soundEffectsEnabled="true" />
+
+        <RadioButton
+            android:text="Hex-decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/out_hex_r"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/radio2"
+            android:soundEffectsEnabled="true" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/output"
+        android:textSize="20sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#f4de97"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="23dp"
+        android:text="Result"
+        android:layout_height="70dp"
+        android:layout_below="@+id/input"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mode_radio_group">
+
+        <RadioButton
+            android:button="@drawable/custom_box2"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:button="@drawable/custom_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="65dp">
+
+            <Button
+                android:text="7"
+                android:layout_width="match_parent"
+                android:id="@+id/button2"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="4"
+                android:layout_width="match_parent"
+                android:id="@+id/button21"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="1"
+                android:layout_width="match_parent"
+                android:id="@+id/button7"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="-"
+                android:layout_width="match_parent"
+                android:id="@+id/button6"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="65dp">
+
+            <Button
+                android:text="8"
+                android:layout_width="match_parent"
+                android:id="@+id/button25"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="5"
+                android:layout_width="match_parent"
+                android:id="@+id/button24"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="2"
+                android:layout_width="match_parent"
+                android:id="@+id/button23"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="0"
+                android:layout_width="match_parent"
+                android:id="@+id/button22"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="65dp">
+
+            <Button
+                android:text="9"
+                android:layout_width="match_parent"
+                android:id="@+id/button29"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="6"
+                android:layout_width="match_parent"
+                android:id="@+id/button28"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="3"
+                android:layout_width="match_parent"
+                android:id="@+id/button27"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="clear"
+                android:layout_width="match_parent"
+                android:id="@+id/button26"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="65dp">
+
+            <Button
+                android:text="A"
+                android:layout_width="match_parent"
+                android:id="@+id/button33"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="B"
+                android:layout_width="match_parent"
+                android:id="@+id/button32"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="C"
+                android:layout_width="match_parent"
+                android:id="@+id/button31"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="X"
+                android:layout_width="match_parent"
+                android:id="@+id/button30"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="65dp">
+
+            <Button
+                android:text="D"
+                android:layout_width="match_parent"
+                android:id="@+id/button37"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="E"
+                android:layout_width="match_parent"
+                android:id="@+id/button36"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="F"
+                android:layout_width="match_parent"
+                android:id="@+id/button35"
+                android:layout_height="60dp" />
+
+            <Button
+                android:text="Calculate"
+                android:layout_width="match_parent"
+                android:id="@+id/button34"
+                android:textSize="8sp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

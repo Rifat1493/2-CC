@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abdullahal_munzir.a2_cc.MainActivity">
+
+    <Button
+        android:text="Binary"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="125dp"
+        android:id="@+id/btn_bin"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:radius="15dp"
+        android:backgroundTint="@color/holo"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="Decimal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_dec"
+        android:elevation="2dp"
+        android:layout_below="@+id/btn_bin"
+        android:layout_alignStart="@+id/btn_bin"
+        android:layout_marginTop="25dp"
+        android:radius="15dp"
+        android:backgroundTint="@color/holo"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="Hexadecimal"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_hex"
+        android:elevation="2dp"
+        android:layout_below="@+id/btn_dec"
+        android:layout_alignStart="@+id/btn_dec"
+        android:layout_marginTop="25dp"
+        android:radius="15dp"
+        android:backgroundTint="@color/holo"
+        android:textStyle="normal|bold"
+        android:fontFamily="monospace"
+        android:textSize="15sp" />
+
+    <Button
+        android:text="New"
+        android:layout_height="60dp"
+        android:id="@+id/new_btn"
+        android:elevation="2dp"
+        android:radius="15dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textStyle="normal|bold"
+        android:fontFamily="monospace"
+        android:textSize="15sp"
+        android:layout_width="100dp"
+        android:layout_below="@+id/btn_hex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

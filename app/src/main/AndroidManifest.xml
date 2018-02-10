@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abdullahal_munzir.a2_cc">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WsActivity"
+            android:theme="@style/wcTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".DecimalActivity"
+            android:fontFamily="sans-serif-condensed"
+            android:label="Decimal" />
+        <activity
+            android:name=".HexActivity"
+            android:label="Hexadecimal" />
+        <activity
+            android:name=".BinaryActivity"
+            android:label="Binary" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About" />
+        <activity
+            android:name=".UmActivity"
+            android:label="User Manual" />
+        <activity
+            android:name=".completeActivity"
+            android:theme="@style/NewTheme" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/NewTheme" />
+        <activity android:name=".test"></activity>
+    </application>
+
+</manifest>
